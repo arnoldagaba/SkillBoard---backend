@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import asyncHandler from "express-async-handler";
 import { StatusCodes } from "http-status-codes";
-import * as authService from "../services/authService.js";
+import * as authService from "../services/auth.service.js";
 import { loginSchema, registerSchema } from "../validators/auth.validator.js";
 import { createAccessToken, createRefreshToken } from "../../utils/token.js";
 
